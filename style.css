@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: xx-large;
+    animation:fadeIn 2s;
+}
+
+
+p{
+    text-align: center;
+    color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main{
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: large;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition:0.5s;
+}
+
+button:hover{
+    background-color: #4745a8;
+    color: crimson;
+    transform:scale(1.1);
+    transform:rotate(10deg);
+    transform:translateY(-10px);
+}
+
+body{
+    background:white;
+    color:black;
+    font-family:Arial;
+    text-align:center;
+    transition:0.5s;
+}
+
+.dark{
+    background:#1e1e1e;
+    color:white;
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
