@@ -1,35 +1,19 @@
-
-
-
-/** 
-let name = prompt("Enter your name:");
-document.getElementByClass("main").innerHTML = "Hello " + name;
-
-
-alert("Hello, " + name + "! Welcome to the class.");
-
-console.log("Test_01");
-**/
-
-
-
-function greet() {
-
-    let name = prompt("What is your name? ");
-
-    document.getElementById("output").innerHTML =
-        "Hello " + name + "! Welcome to JavaScript.";
-
+function addValue(value) {
+    document.getElementById("display").value += value;
 }
 
-function dark(){
-
-    document.body.classList.add("dark");
-
+function clearDisplay() {
+    document.getElementById("display").value = "";
 }
 
-function light(){
+function deleteLast() {
+    let display = document.getElementById("display");
 
-    document.body.classList.remove("dark");
+    display.value = display.value.slice(0, -1);
+}
 
+function calculate() {
+    let display = document.getElementById("display");
+
+    display.value = eval(display.value);
 }
